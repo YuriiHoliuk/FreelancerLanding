@@ -121,6 +121,9 @@ h1,
 .team {
   margin-bottom: 27.5px; }
 
+header {
+  padding-left: 15px; }
+
 .title {
   margin-top: 10%;
   margin-left: 0; }
@@ -221,9 +224,10 @@ footer {
   position: fixed;
   width: 100%;
   margin: 0 auto;
-  margin-bottom: 50px;
   background-color: #fff;
-  z-index: 2; }
+  z-index: 2;
+  margin-left: -30px;
+  padding-left: 30px; }
 
 @media (max-width: 570px) {
   .welcome {
@@ -279,7 +283,10 @@ footer {
     padding-left: 110px;
     background-size: 90px; }
   .social {
-    padding-bottom: 0; } }
+    padding-bottom: 0; }
+  .js-fixed-header {
+    padding-left: 8%;
+    margin-left: -8%; } }
 
 @media (min-width: 992px) {
   .h1 {
@@ -323,4 +330,7 @@ footer {
     padding-left: 140px;
     background-size: 120px; }
   .js-fixed-header {
-    width: 68.61314%; } }
+    width: 100%;
+    margin: 0 auto;
+    margin-left: -15.69343%;
+    padding-left: 15.69343%; } }
