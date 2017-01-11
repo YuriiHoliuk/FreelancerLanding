@@ -1,0 +1,336 @@
+/*--------------------------
+
+			#VARIABLES
+
+---------------------------*/
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+  line-height: 1.46667;
+  color: #9aa0ab; }
+
+a {
+  color: inherit;
+  text-transform: uppercase; }
+
+a:hover,
+a:focus {
+  text-decoration: none;
+  color: inherit; }
+
+/*-----------------------------
+
+			#FONT STYLES
+
+-----------------------------*/
+h1 {
+  font-family: "Domine", serif;
+  color: #fff; }
+  h1 span {
+    color: #314a5b; }
+
+h1,
+.h1 + p {
+  font-size: 20px; }
+
+.h1,
+.h2,
+.h2-s,
+.h3,
+.h4 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  color: #314a5b;
+  text-transform: uppercase; }
+  .h1 span,
+  .h2 span,
+  .h2-s span,
+  .h3 span,
+  .h4 span {
+    color: #f0454c; }
+
+.h1 {
+  font-size: 28.8px;
+  letter-spacing: -2px; }
+
+.h2 {
+  font-size: 24px;
+  letter-spacing: -1px; }
+
+.h2-s {
+  font-size: 19.2px; }
+
+.h3 {
+  font-size: 18.2px; }
+
+.h4 {
+  font-size: 15.4px; }
+
+.h1 span {
+  color: #fa5c65; }
+
+.h1 + p,
+.h2 + p {
+  color: #314a5b; }
+
+.h2 + p,
+.h2-s + p {
+  font-size: 16px; }
+
+.button {
+  color: #fff;
+  font-weight: bold; }
+
+.mainnav,
+.h4 ~ p {
+  font-size: 14px; }
+
+.h4 + p {
+  color: #f0454c; }
+
+.mainnav li {
+  font-family: "Montserrat", sans-serif;
+  color: #263742; }
+  .mainnav li:nth-last-of-type(-n+2) {
+    color: #fa5c65; }
+
+.copyright {
+  font-size: 13px; }
+
+.more {
+  font-family: "Montserrat", sans-serif;
+  color: #f0454c; }
+
+/*-------------------------
+
+			#MARGINS
+
+-------------------------*/
+.container {
+  padding-left: 30px;
+  padding-right: 30px;
+  width: auto; }
+
+.features,
+.portfolio {
+  margin-bottom: 50px; }
+
+.welcome {
+  margin-bottom: 15px; }
+
+.team {
+  margin-bottom: 27.5px; }
+
+header {
+  padding-left: 15px; }
+
+.title {
+  margin-top: 10%;
+  margin-left: 0; }
+
+.h1 + p {
+  margin-bottom: 60px; }
+
+.h3,
+.h3 + p {
+  margin-bottom: 20px; }
+
+.portfolio p {
+  margin-bottom: 20px; }
+  .portfolio p:last-of-type {
+    margin-bottom: 35px; }
+
+.h2-s + p {
+  margin-bottom: 25px; }
+
+.guys {
+  margin-bottom: 20px; }
+
+.h4,
+.h4 + p {
+  margin-bottom: 5px; }
+
+/*------------------------------
+
+			#STYLING
+
+------------------------------*/
+.welcome {
+  padding-bottom: 100px;
+  background-image: url("../img/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% auto; }
+
+.logo {
+  padding-top: 5px;
+  width: 140px;
+  background-color: #fa5c65;
+  border-radius: 0 0 5px 5px; }
+  .logo a {
+    text-transform: none; }
+
+.mainnav {
+  padding: 25px 0 0 0; }
+  .mainnav li {
+    display: block;
+    float: left;
+    margin-right: 35px;
+    margin-bottom: 7px; }
+    .mainnav li:last-of-type {
+      margin-right: 0; }
+
+.button {
+  padding: 11px 22px;
+  background-color: #fa5c65;
+  border-radius: 5px; }
+
+.macbook {
+  display: none; }
+
+.guy {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 100px;
+  background-size: 80px;
+  background-position: 0 30%;
+  background-repeat: no-repeat; }
+
+.joey {
+  background-image: url("../img/Joey.png"); }
+
+.matt {
+  background-image: url("../img/Matt.png"); }
+
+.mike {
+  background-image: url("../img/Mike.png"); }
+
+footer {
+  padding-top: 35px;
+  padding-bottom: 15px;
+  border-top: 1px solid #e6eaed; }
+
+.social {
+  padding-bottom: 10px; }
+
+.social,
+.copyright {
+  padding-left: 0;
+  padding-right: 0; }
+
+.social a:not(:last-child) {
+  margin-right: 17px; }
+
+.js-fixed-header {
+  position: fixed;
+  width: 100%;
+  margin: 0 auto;
+  background-color: #fff;
+  z-index: 2;
+  margin-left: -30px;
+  padding-left: 30px; }
+
+@media (max-width: 570px) {
+  .welcome {
+    background: none;
+    padding-bottom: 50px; }
+  .title {
+    margin-top: 5%;
+    padding-top: 5%; }
+    .title .h1 + p {
+      margin-bottom: 40px; }
+  .title,
+  .features,
+  .portfolio,
+  .team {
+    border-top: 1px solid #e6eaed; } }
+
+@media (min-width: 768px) {
+  .container {
+    padding-left: 8%;
+    padding-right: 8%; }
+  .h1 {
+    font-size: 36px;
+    letter-spacing: -2px; }
+  .h2 {
+    font-size: 32px;
+    letter-spacing: -1px; }
+  .h2-s {
+    font-size: 25.6px; }
+  .h3 {
+    font-size: 20.8px; }
+  .h4 {
+    font-size: 19.8px; }
+  .features {
+    margin-bottom: 70px; }
+  .portfolio {
+    margin-bottom: 60px; }
+  .welcome {
+    margin-bottom: 30px; }
+  .team {
+    margin-bottom: 38.5px; }
+  .logo {
+    padding-top: 10px; }
+  .title {
+    margin-top: 15%; }
+  .button {
+    padding: 14.52px 29.04px; }
+  .macbook {
+    display: block;
+    padding-top: 40px; }
+  .guys {
+    margin-bottom: 30px; }
+  .guy {
+    padding-left: 110px;
+    background-size: 90px; }
+  .social {
+    padding-bottom: 0; }
+  .js-fixed-header {
+    padding-left: 8%;
+    margin-left: -8%; } }
+
+@media (min-width: 992px) {
+  .h1 {
+    font-size: 48px;
+    letter-spacing: -2px; }
+  .h2 {
+    font-size: 40px;
+    letter-spacing: -1px; }
+  .h2-s {
+    font-size: 32px; }
+  .h3 {
+    font-size: 26px; }
+  .h4 {
+    font-size: 22px; }
+  .container {
+    padding-left: 15.69343%;
+    padding-right: 15.69343%; }
+  .portfolio {
+    margin-bottom: 100px; }
+  .welcome {
+    margin-bottom: 75px; }
+  .team {
+    margin-bottom: 55px; }
+  .title {
+    margin-top: 24.44444444%; }
+  .mainnav li {
+    padding-bottom: 0; }
+  .logo {
+    padding-top: 21px; }
+  .button {
+    padding: 22px 44px; }
+  .macbook {
+    padding-top: 10px; }
+  .text {
+    padding-left: 65px; }
+  .h2-s + p {
+    margin-bottom: 45px; }
+  .guys {
+    margin-bottom: 50px; }
+  .guy {
+    padding-left: 140px;
+    background-size: 120px; }
+  .js-fixed-header {
+    width: 100%;
+    margin: 0 auto;
+    margin-left: -15.69343%;
+    padding-left: 15.69343%; } }

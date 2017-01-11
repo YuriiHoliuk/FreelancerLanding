@@ -1,0 +1,529 @@
+/*--------------------------
+
+			#VARIABLES
+
+---------------------------*/
+
+
+
+//fonts
+
+$opensans: 'Open Sans', sans-serif;
+$montserrat: 'Montserrat', sans-serif;
+$domine: 'Domine', serif;
+
+//colors
+
+$mainblue: #314a5b;
+$secondblue: #263742;
+$textgray: #9aa0ab;
+$icongray: #b9c0c6;
+$mainred: #fa5c65;
+$textred: #f0454c;
+
+//font-sizes
+
+$h1: 48px;
+$h2: 40px;
+$h2-s: 32px;
+$h3: 26px;
+$h4: 22px;
+$xltext: 20px;
+$largetext: 16px;
+$commontext: 15px;
+$smalltext: 14px;
+$xstext: 13px;
+
+//margins
+
+$contentpad: 15.69343066%; //  220px/1370px*100%
+$contentpad-s: 8%;
+$contentpad-xs: 30px;
+$sectionmargin: 100px;
+$sectionmargin-s: 75px;
+$sectionmargin-xs: 55px;
+$vw: .729927vw; //10px оригінальнльного макету
+
+body {
+	font-family: $opensans;
+	font-size: $commontext;
+	line-height: (22/15);
+	color: $textgray;
+}
+
+a {
+	color: inherit;
+	text-transform: uppercase;
+}
+
+a:hover,
+a:focus {
+	text-decoration: none;
+	color: inherit;
+}
+
+
+
+/*-----------------------------
+
+			#FONT STYLES
+
+-----------------------------*/
+
+
+
+h1 {
+	font-family: $domine;
+	color: #fff;
+	span {
+		color: $mainblue;
+	}
+}
+
+h1,
+.h1 + p {
+	font-size: $xltext;
+}
+
+.h1,
+.h2,
+.h2-s,
+.h3,
+.h4 {
+	font-family: $montserrat;
+	font-weight: bold;
+	color: $mainblue;
+	text-transform: uppercase;
+	span {
+		color: $textred;
+	}
+}
+
+.h1 {
+	font-size: $h1*0.6;
+	letter-spacing: -2px;
+}
+
+.h2 {
+	font-size: $h2*0.6;
+	letter-spacing: -1px;
+}
+
+.h2-s {
+	font-size: $h2-s*0.6;
+}
+
+.h3 {
+	font-size: $h3*0.7;
+}
+
+.h4 {
+	font-size: $h4*0.7;
+}
+
+.h1 span {
+	color: $mainred;
+}
+
+.h1 + p,
+.h2 + p {
+	color: $mainblue;
+}
+
+.h2 + p,
+.h2-s +p {
+	font-size: $largetext;
+}
+
+.button {
+	color: #fff;
+	font-weight: bold;
+}
+
+.mainnav,
+.h4 ~ p {
+	font-size: $smalltext;
+}
+
+.h4 +p {
+	color: $textred;
+}
+
+.mainnav li {
+	font-family: $montserrat;
+	color: $secondblue;
+	&:nth-last-of-type(-n+2) {
+		color: $mainred;
+	}
+}
+
+.copyright {
+	font-size: $xstext;
+}
+
+.more {
+	font-family: $montserrat;
+	color: $textred;
+}
+
+
+
+/*-------------------------
+
+			#MARGINS
+
+-------------------------*/
+
+
+
+.container {
+	padding-left: $contentpad-xs;
+	padding-right: $contentpad-xs;
+	width: auto;
+}
+
+.features,
+.portfolio {
+	margin-bottom: $sectionmargin*0.5;
+}
+
+.welcome {
+	margin-bottom: $sectionmargin-s*0.2;
+}
+
+.team {
+	margin-bottom: $sectionmargin-xs*0.5;
+}
+
+header {
+	padding-left: 15px;
+}
+
+.title {
+	margin-top: 10%;
+	margin-left: 0;
+}
+
+.h1 + p {
+	margin-bottom: 60px;
+}
+
+.h3,
+.h3 + p {
+	margin-bottom: 20px;
+}
+
+.portfolio p {
+	margin-bottom: 20px;
+	&:last-of-type {
+		margin-bottom: 35px;
+	}
+}
+
+.h2-s + p {
+	margin-bottom: 25px;
+}
+
+.guys {
+	margin-bottom: 20px;
+}
+
+.h4,
+.h4 + p {
+	margin-bottom: 5px;
+}
+
+
+
+/*------------------------------
+
+			#STYLING
+
+------------------------------*/
+
+
+
+.welcome {
+	padding-bottom: 100px;
+	background-image: url('../img/bg.jpg');
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+}
+
+.logo {
+	padding-top: 5px;
+	width: 140px;
+	background-color: $mainred;
+	border-radius: 0 0 5px 5px;
+	a {
+		text-transform: none;
+	}
+}
+
+.mainnav {
+	padding: 25px 0 0 0;
+	li {
+		display: block;
+		float: left;
+		margin-right: 35px;
+		margin-bottom: 7px;
+		&:last-of-type {
+			margin-right: 0;
+		}
+		a {
+			&:hover,
+			&:focus {
+			}
+		}
+	}
+}
+
+.button {
+	padding: 11px 22px;
+	background-color: $mainred;
+	border-radius: 5px;
+}
+
+.macbook {
+	display: none;
+}
+
+.guy {
+	padding-top: 15px;
+	padding-bottom: 15px;
+	padding-left: 100px;
+	background-size: 80px;
+	background-position: 0 30%;
+	background-repeat: no-repeat;
+}
+
+.joey {
+	background-image: url('../img/Joey.png');
+}
+
+.matt {
+	background-image: url('../img/Matt.png');
+}
+
+.mike {
+	background-image: url('../img/Mike.png');
+}
+
+footer {
+	padding-top: 35px;
+	padding-bottom: 15px;
+	border-top: 1px solid #e6eaed;
+}
+
+.social {
+	padding-bottom: 10px;
+}
+
+.social,
+.copyright {
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.social a:not(:last-child) {
+	margin-right: 17px;
+}
+
+.js-fixed-header {
+	position: fixed;
+	width: 100%;
+	margin: 0 auto;
+	background-color: #fff;
+	z-index: 2;
+	margin-left: -30px;
+	padding-left: 30px;
+}
+
+@media (max-width: 570px) {
+
+.welcome {
+	background: none;
+	padding-bottom: 50px;
+}
+
+.title {
+	margin-top: 5%;
+	padding-top: 5%;
+	.h1 + p {
+		margin-bottom: 40px;
+	}
+}
+.title,
+.features,
+.portfolio,
+.team {
+	border-top: 1px solid #e6eaed;
+}
+
+}
+
+@media (min-width: 768px) {
+.container {
+	padding-left: $contentpad-s;
+	padding-right: $contentpad-s;
+}
+
+.h1 {
+	font-size: $h1*0.75;
+	letter-spacing: -2px;
+}
+
+.h2 {
+font-size: $h2*0.8;
+letter-spacing: -1px;
+}
+
+.h2-s {
+	font-size: $h2-s*0.8;
+}
+
+.h3 {
+	font-size: $h3*0.8;
+}
+
+.h4 {
+	font-size: $h4*0.9;
+}
+
+.features {
+	margin-bottom: $sectionmargin*0.7;
+}
+
+.portfolio  {
+	margin-bottom: $sectionmargin*0.6;
+}
+
+.welcome {
+	margin-bottom: $sectionmargin-s*0.4;
+}
+
+.team {
+	margin-bottom: $sectionmargin-xs*0.7;
+}
+
+.logo {
+	padding-top: 10px;
+}
+
+.title {
+	margin-top: 15%;
+}
+
+.button {
+	padding: 22px*0.66 44px*0.66;
+}
+
+.macbook {
+	display: block;
+	padding-top: 40px;
+}
+
+.guys {
+	margin-bottom: 30px;
+}
+
+.guy {
+	padding-left: 110px;
+	background-size: 90px;
+}
+
+.social {
+	padding-bottom: 0;
+}
+
+.js-fixed-header {
+	padding-left: $contentpad-s;
+	margin-left: -$contentpad-s;
+}
+
+}
+@media (min-width: 992px) {
+.h1 {
+	font-size: $h1;
+	letter-spacing: -2px;
+}
+
+.h2 {
+font-size: $h2;
+letter-spacing: -1px;
+}
+
+.h2-s {
+	font-size: $h2-s;
+}
+
+.h3 {
+	font-size: $h3;
+}
+
+.h4 {
+	font-size: $h4;
+}
+
+.container {
+	padding-left: $contentpad;
+	padding-right: $contentpad;
+}
+
+.portfolio  {
+	margin-bottom: $sectionmargin;
+}
+
+.welcome {
+	margin-bottom: $sectionmargin-s;
+}
+
+.team {
+	margin-bottom: $sectionmargin-xs;
+}
+
+.title {
+	margin-top: 24.44444444%;
+}
+
+.mainnav li {
+	padding-bottom: 0;
+}
+
+.logo {
+	padding-top: 21px;
+}
+
+.button {
+	padding: 22px 44px;
+}
+
+.macbook {
+	padding-top: 10px;
+}
+
+.text {
+	padding-left: 65px;
+}
+
+.h2-s + p {
+	margin-bottom: 45px;
+}
+
+.guys {
+	margin-bottom: 50px;
+}
+
+.guy {
+	padding-left: 140px;
+	background-size: 120px;
+}
+
+.js-fixed-header {
+	width: 100%;
+	margin: 0 auto;
+	margin-left: -$contentpad;
+	padding-left: $contentpad;
+}
+
+}
