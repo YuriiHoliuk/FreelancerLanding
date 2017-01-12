@@ -29,7 +29,7 @@ gulp.task('browser-sync', function() {
 });
 
 gulp.task('scripts', function() {
-    return gulp.src(['src/libs/jquery/dist/jquery.min.js'])
+    return gulp.src(['src/libs/jquery/jquery.min.js'])
         .pipe(concat('libs.min.js'))
         .pipe(uglify())
         .pipe(gulp.dest('src/js'));
@@ -49,7 +49,7 @@ gulp.task('watch', ['browser-sync', 'css-libs', 'scripts'], function() {
 });
 
 gulp.task('clean', function() {
-    return del.sync('dist');
+    return del.sync(['css', 'js', 'img', 'fonts', '*.html']);
 });
 
 gulp.task('img', function() {
@@ -60,7 +60,7 @@ gulp.task('img', function() {
             svgoPlugins: [{removeViewBox: false}],
             use: [pngquant()]
         })))
-        .pipe(gulp.dest('dist/img'));
+        .pipe(gulp.dest('img'));
 });
 
 gulp.task('build', ['clean', 'img', 'sass', 'scripts'], function() {
@@ -69,16 +69,16 @@ gulp.task('build', ['clean', 'img', 'sass', 'scripts'], function() {
         'src/css/*.css',
         '!src/css/libs.css'
         ])
-    .pipe(gulp.dest('dist/css'))
+    .pipe(gulp.dest('css'))
 
     var buildFonts = gulp.src('src/fonts/**/*')
-    .pipe(gulp.dest('dist/fonts'))
+    .pipe(gulp.dest('fonts'))
 
     var buildJs = gulp.src('src/js/**/*')
-    .pipe(gulp.dest('dist/js'))
+    .pipe(gulp.dest('js'))
 
     var buildHtml = gulp.src('src/*.html')
-    .pipe(gulp.dest('dist'));
+    .pipe(gulp.dest(''));
 
 });
 
